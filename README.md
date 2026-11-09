@@ -13,8 +13,10 @@ pip install -r requirements.txt
 ```
 ```
 
+
 ## Usage example
-```
+
+
 ```
 client = GitHubPublicAPIClient()
 data = client.getPRS("bpineda/flask-empty-app")
