@@ -1,10 +1,6 @@
-import requests
+from github_public_api_client import GitHubPublicAPIClient
 
-response = requests.get("https://api.github.com/repos/bpineda/flask-empty-app/pulls")
+client = GitHubPublicAPIClient()
+client.showResponseNodeNames("bpineda/flask-empty-app")
 
-#print(response)
-data = response.json()
-
-for key in data[0]:
-    print(key)
 
